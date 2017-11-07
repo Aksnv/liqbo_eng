@@ -1280,6 +1280,7 @@ label[for="agreement-form__checkbox"] {
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 6;
 }
 
 .back-to-top button::before {
