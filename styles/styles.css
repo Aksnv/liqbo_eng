@@ -747,17 +747,21 @@ label[for="agreement-form__checkbox"] {
 .our-team__link {
   display: inline-block;
   vertical-align: top;
-  width: 26px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-image: url("../images/sprite.png");
 }
 
 .our-team__link--email {
-  background-position: -5px -379px;
+  background-position: -52px -358px;
 }
 
 .our-team__link--linkedin {
-  background-position: -6px -401px;
+  background-position: -52px -281px;
+}
+
+.our-team__link--facebook {
+  background-position: -52px -332px;
 }
 
 .our-team .team-video::before {
