@@ -63,6 +63,7 @@
           <select>
             <option>En</option>
             <option>Ru</option>
+            <option>Cn</option>
           </select>
         </form>
         <nav class="main-menu">
@@ -72,8 +73,8 @@
             <li class="main-menu__item main-menu__item--our-team"><a href="#">Our team</a></li>
             <li class="main-menu__item main-menu__item--roadmap"><a href="#">Roadmap</a></li>
             <li class="main-menu__item main-menu__item--qa"><a href="#">Q&amp;A</a></li>
-            <li class="main-menu__item main-menu__item--rewards"><a href="#">Rewards/Bounty</a></li>
-            <li class="main-menu__item main-menu__item--blog"><a href="#">Our blog</a></li>
+            <!-- <li class="main-menu__item main-menu__item--rewards"><a href="#">Rewards/Bounty</a></li> -->
+            <li class="main-menu__item main-menu__item--news"><a href="#">News</a></li>
             <li class="main-menu__item main-menu__item--press"><a href="#">Press</a></li>
           </ul>
         </nav>
@@ -158,12 +159,16 @@
               <img src="images/team/kuznetsov.png">
               <h3>Julius B. Kuznetsov</h3>
               <h4>Founder &amp; CEO<br> FINSTICK Innovations</h4>
-              <p>ex-Commercial Director<br> of Trafficland Limited<br>
-                ex-Managing Director<br> of GEMPLUS-CIS<br> (now Gemalto)<br>
+              <p>ex-Commercial Director of Trafficland Limited<br>
+                ex-Managing Director of GEMPLUS-CIS<br> (now Gemalto)<br>
                 <a href="mailto:julius@finstick.net" class="inline-link">julius@finstick.net</a><br>
-                <!-- Linkedin: <a href="http://www.linkedin.com/in/Julikuznetsov" class="inline-link">www.linkedin.com/in/Julikuznetsov</a> -->
                 <a href="http://www.linkedin.com/in/Julikuznetsov" class="inline-link">Linkedin</a>
               </p>
+              <div class="our-team__links">
+                <a href="mailto:julius@finstick.net" class="our-team__link our-team__link--email"></a>
+                <a href="http://www.linkedin.com/in/Julikuznetsov" class="our-team__link our-team__link--linkedin"></a>
+                <a href="#" class="our-team__link our-team__link--facebook"></a>
+              </div>
             </li>
             <!-- <li>
               <img src="images/team/1.png">
@@ -299,7 +304,7 @@
         </article>
       </section>
   
-      <section class="rewards" id="rewards">
+      <!-- <section class="rewards" id="rewards">
         <article>
           <header>
             <h1>Rewards / Bounty</h1>
@@ -310,7 +315,7 @@
           <p>The counterargument was, in the world of software, the product is your “funnel.” The problem with great marketing is that it will hide the leaks in that funnel, fooling you into believing the hype around your vanity metrics.</p>
           <aside>Product vs Marketing: who wins<br> Earlier this summer, I decided it was time for a career change. As a young, scrappy, and hungry dreamer who sold enterprise software in San Francisco I felt like I was in a position to take advantage of all the opportunities that my life here had to offer.</aside>
         </article>
-      </section>
+      </section> -->
   
       <section class="media">
         <article>
@@ -322,7 +327,7 @@
             <li><a href="#"><img src="images/media/2.png"></a></li>
             <li><a href="#"><img src="images/media/3.png"></a></li> -->
             <li>
-              <video class="media__video-item media__video-item--1" controls="controls">
+              <video class="media__video-item media__video-item--1">
                 <source src="video/MVI_8120.MOV">
               </video>
             </li>
@@ -340,25 +345,25 @@
         </article>
       </section>
   
-      <section class="blog" id="blog">
-        <div class="blog-navigation">
-          <button class="blog-navigation__button blog-navigation__button--back" disabled="disabled"></button>
-          <button class="blog-navigation__button blog-navigation__button--forward"></button>
+      <section class="news" id="news">
+        <div class="news-navigation">
+          <button class="news-navigation__button news-navigation__button--back" disabled="disabled"></button>
+          <button class="news-navigation__button news-navigation__button--forward"></button>
         </div>
         <article>
           <header>
-            <h1>Our blog</h1>
+            <h1>News</h1>
           </header>
           <ul>
-            <li class="blog-item blog-item--1 blog-item--visible">
+            <li class="news-item news-item--1 news-item--visible">
               <section>
                 <time>09.10.2017</time>
                 <h3>Choosing one company.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link blog-article blog-article--1">read more</a>
+                <a href="#" class="inline-link news-article news-article--1">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--2 blog-item--visible">
+            <li class="news-item news-item--2 news-item--visible">
               <section>
                 <time>09.10.2017</time>
                 <h3>Choosing one company.</h3>
@@ -366,7 +371,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--3">
+            <li class="news-item news-item--3">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
@@ -374,7 +379,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--4">
+            <li class="news-item news-item--4">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
@@ -382,7 +387,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--5">
+            <li class="news-item news-item--5">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company3.</h3>
@@ -390,7 +395,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--6">
+            <li class="news-item news-item--6">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company3.</h3>
@@ -400,11 +405,11 @@
             </li>
           </ul>
         </article>
-        <div class="blog-pagination">
+        <div class="news-pagination">
           <ul>
-            <li class="blog-pagination__item blog-pagination__item--1 blog-pagination__item--active"><a href="#"></a></li>
-            <li class="blog-pagination__item blog-pagination__item--2"><a href="#"></a></li>
-            <li class="blog-pagination__item blog-pagination__item--3"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--1 news-pagination__item--active"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--2"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--3"><a href="#"></a></li>
           </ul>
         </div>
       </section>
@@ -421,13 +426,15 @@
           <ul>
             <li class="press-item press-item--1 press-item--visible">
               <section>
-                <h3>Choosing one company.</h3>
-                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link">read more</a>
+                <time>Moscow, 10 November 2017</time>
+                <h3>Press release</h3>
+                <p>FINSTICK Innovations have successfully completed a Proof of Concept (PoC) based on the Blockchain driven Liquid Bonus® Loyalty Aggregation Medium.</p>
+                <a href="#" class="inline-link press-article press-article--1">read more</a>
               </section>
             </li>
             <li class="press-item press-item--2 press-item--visible">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
                 <a href="#" class="inline-link">read more</a>
@@ -435,6 +442,7 @@
             </li>
             <li class="press-item press-item--3">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
                 <a href="#" class="inline-link">read more</a>
@@ -442,6 +450,7 @@
             </li>
             <li class="press-item press-item--4">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
                 <a href="#" class="inline-link">read more</a>
@@ -451,8 +460,8 @@
         </article>
         <div class="press-pagination">
           <ul>
-            <li class="press-pagination__item blog-pagination__item--1 press-pagination__item--active"><a href="#"></a></li>
-            <li class="press-pagination__item blog-pagination__item--2"><a href="#"></a></li>
+            <li class="press-pagination__item news-pagination__item--1 press-pagination__item--active"><a href="#"></a></li>
+            <li class="press-pagination__item news-pagination__item--2"><a href="#"></a></li>
           </ul>
         </div>
       </section>
@@ -497,15 +506,18 @@
     <button>Home</button>
   </div>
 
-  <div class="popup popup--article">
+  <div class="popup popup--article popup--press-1">
     <div class="container--popup">
       <button class="popup__close-button"></button>
       <article>
         <header>
-          <time>09.10.2017</time>
-          <h1>Choosing one company</h1>
+          <time>Moscow, 10 November 2017</time>
+          <h1>FINSTICK Innovations have successfully completed a Proof of Concept (PoC) based on the Blockchain driven Liquid Bonus® Loyalty Aggregation Medium.</h1>
         </header>
-        <p>In order to unify the application and erase the circulation boundaries for reward points, miles and other proprietary utilities, the interoperable Liquid Bonus® or LiqBo® Token has been introduced. LiqBo® Token is the utility token aimed for abstracting from (sometimes replacing of) points, stamps, miles and other valued legacy bonus points. Thus every customer shall be able to get LiqBo® Tokens as reward in the context of any existing loyalty program or even from a standalone shop and exchange them for discounts at any point of sale that is ready to accept LiqBo® Tokens. In order to unify the application and erase the circulation boundaries for reward points, miles and other proprietary utilities, the interoperable Liquid Bonus® or LiqBo® Token has been introduced. LiqBo® Token is the utility token aimed for abstracting from (sometimes replacing of) points, stamps, miles and other valued legacy bonus points.</p>
+        <p>FINSTICK Innovations have successfully completed a Proof of Concept (PoC) based on the Blockchain driven Liquid Bonus® Loyalty Aggregation Medium.</p>
+        <p>The Liquid Bonus® Loyalty Aggregation Medium (<a href="http://www.liqbo.com/" class="inline-link">www.liqbo.com</a>) is designed to eliminate most of problems associated with self-sufficiency, closeness and isolation of loyalty programs and, as a consequence, low consumers’ demand for related services. Indeed, being registered in a dozen of loyalty programs, the average customer actively uses just 2-4 of them. The Liquid Bonus® Loyalty Aggregation Medium solves this issue by sharing the conventional economic model of traditional loyalty programs with an additional incentive that customers gain along with the ability to accumulate Liquid Bonus® or LiqBo® tokens. By getting LiqBo® tokens as a reward and (or) by converting them from miles and points of various loyalty market players, consumers can easily "monetize" them later by obtaining a discount in exchange to LiqBo® tokens or by reverse conversion to a proprietary mean of discount at the next purchase in another place.</p>
+        <p>"In the process of creating and implementing of the Liquid Bonus® Medium, we are striving to achieve much lower cost than today's existing loyalty solution providers can offer for integration of common loyalty systems”, said Julius Kuznetsov, founder and CEO of FINSTICK Innovations "In addition to it, we shall provide much higher throughput and performance than competing public Blockchain – based solutions can do."</p>
+        <aside>About FINSTICK Innovations:<br>FINSTICK Innovations LLC (<a href="http://www.finstick.net/" class="inline-link">www.finstick.net</a>) is a startup aimed for advanced developments in the emerging fintech and blockchain industry. Incorporated in 2017, FINSTICK Innovations is backed by highly motivated professionals in cryptography, mobile payments, smart-cards, telecommunications and value-added services. With our average 20+ years of field experience and several invention patents, our team is bearing the best practices of software design and development, optimization of algorithms, conceptualization and integration of complex IT systems.</aside>
       </article>
     </div>
   </div>
