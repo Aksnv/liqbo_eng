@@ -926,6 +926,7 @@ label[for="agreement-form__checkbox"] {
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .media li::after {
@@ -943,6 +944,11 @@ label[for="agreement-form__checkbox"] {
 
 .media ul > li:last-child {
   margin-right: 0;
+}
+
+.media video {
+  max-width: 327px;
+  height: 219px;
 }
 
 /* Main content - Blog */

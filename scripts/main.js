@@ -448,3 +448,34 @@ $(".subscribe-form__close-button").click(function(e) {
   $(".header-personal").removeClass("header-personal--hidden");
 });
 
+
+/* Play video button */
+
+var v1 = document.querySelector(".media__video-item--1");
+var v2 = document.querySelector(".media__video-item--2");
+var v3 = document.querySelector(".media__video-item--3");
+
+v1.onclick = function() {
+  if (v1.paused) {
+    v1.play();
+  } else {
+    v1.pause();
+  }
+};
+
+v2.onclick = function() {
+  if (v2.paused) {
+    v2.play();
+  } else {
+    v2.pause();
+  }
+};
+
+v3.onclick = function() {
+  if (v3.paused) {
+    v3.play();
+  } else {
+    v3.pause();
+  }
+};
+
