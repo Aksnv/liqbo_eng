@@ -600,11 +600,13 @@ $().ready(function(){
 $(".header-top__menu-button").click(function() {
   $(".header-bottom").show();
   $(".social-links").show();
+  $(".main-content").css("paddingTop", "848px");
 });
 
 $(".header-bottom__close-button").click(function() {
   $(".header-bottom").hide();
   $(".social-links").hide();
+  $(".main-content").css("paddingTop", 0);
 });
 
 
