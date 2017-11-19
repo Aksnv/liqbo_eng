@@ -47,7 +47,7 @@
 }
 
 body {
-  /* overflow-x: hidden; */ 
+  overflow-x: hidden;  
   font-family: 'geometriaregular', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -2041,7 +2041,7 @@ label[for="agreement-form__checkbox"] {
   }
 
   .main-menu {
-    width: 100px;
+    width: 101px;
     text-align: center;
     margin: 0 auto;
     margin-top: 185px;
