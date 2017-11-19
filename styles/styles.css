@@ -2086,7 +2086,8 @@ label[for="agreement-form__checkbox"] {
   }
 
   .main-content .container {
-    padding-left: 50px;
+    padding-left: 40px;
+    padding-right: 10px;
   }
 
   /* Main content - Home */
