@@ -47,7 +47,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; 
   font-family: 'geometriaregular', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -2007,7 +2007,7 @@ label[for="agreement-form__checkbox"] {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 768px;
+    height: 1024px;
     background-color: #122424;
     z-index: 10;
   }
@@ -2024,9 +2024,8 @@ label[for="agreement-form__checkbox"] {
 
   .select-language {
     float: none;
-    position: relative;
-    top: 43px;
-    left: 32px;
+    margin-top: 43px;
+    margin-left: 32px;
   }
 
   .select-language .jq-selectbox li {
@@ -2056,7 +2055,7 @@ label[for="agreement-form__checkbox"] {
 
   .header-bottom__close-button {
     position: absolute;
-    top: 55px;
+    top: 12px;
     right: 33px;
     content: "";
     display: block;
@@ -2075,7 +2074,8 @@ label[for="agreement-form__checkbox"] {
   .main-content {
     /* padding-top: 592px; */
     background-image: url("../images/bg--768.png");
-    background-size: 100%;
+    /* background-size: 100%; */
+    background-size: 66%;
   }
 
   .main-content .container {
@@ -2119,6 +2119,7 @@ label[for="agreement-form__checkbox"] {
 
   .roadmap ul {
     position: static;
+    width: 100%;
   }
 
   .roadmap ul::after {
@@ -2172,8 +2173,7 @@ label[for="agreement-form__checkbox"] {
 
   .social-links {
     position: absolute;
-    top: auto;
-    bottom: 40px;
+    top: 900px;
     left: calc(50% - 150px);
     display: none;
     z-index: 10;
