@@ -2012,6 +2012,14 @@ label[for="agreement-form__checkbox"] {
     z-index: 10;
   }
 
+  .header-bottom--scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1024px;
+  }
+
   .header-bottom--scroll .main-menu {
     padding-left: 0;
   }
