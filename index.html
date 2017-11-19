@@ -35,24 +35,31 @@
             </ul>
           </div>
           <div class="header-top__stay-tuned">
-            <strong>STAY TUNED</strong>
-            <p><a href="#">Enter your email</a> adress to stay up<br> to date on the Liquid Bonus ICO and rollout</p>
+            <div class="container--stay-tuned">
+              <strong>STAY TUNED</strong>
+              <p><a href="#">Enter your email</a> adress to stay up <span class="br">to date on the Liquid Bonus ICO and rollout</span></p>
+            </div>
           </div>
-          <form name="header-top__subscribe-form" method="POST" action="#" class="header-top__subscribe-form">
-            <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="example@mail.com">
+          <div class="header-top__subscriber">
+            <strong> </strong>
+            <p><a href="#">unsubscribe from</a></p>
+          </div>
+          <form name="header-top__subscribe-form" method="POST" action="#" class="header-top__subscribe-form" id="subscribe">
+            <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="example@mail.com" id="email">
             <input type="submit" name="subscribe-form__submit" class="subscribe-form__submit" value="Subscribe">
             <button class="subscribe-form__close-button"></button>
           </form>
           <div class="header-top__discount">
             <p>TODAY's PREMIUM 15% <span>(ends-up in October 31.10.2017 at 12:00 PM)</span></p>
           </div>
+          <button class="header-top__menu-button"></button>
         </div>
       </div>
     </div>
     <div class="header-bottom">
       <div class="container">
         <div class="header-personal">
-          <a class="header-personal__button" href="#">Join <span>or</span> Login</a>
+          <a class="header-personal__button" href="//user.liqbo.com/">Join <span>or</span> Login</a>
           <!-- <p>
             <a class="header-top__personal-join" href="#">Join</a>
             <span>or</span>
@@ -78,6 +85,7 @@
             <li class="main-menu__item main-menu__item--press"><a href="#">Press</a></li>
           </ul>
         </nav>
+        <button class="header-bottom__close-button"></button>
       </div>
     </div>
   </header>
@@ -159,7 +167,7 @@
               <img src="images/team/kuznetsov.png">
               <h3>Julius B. Kuznetsov</h3>
               <h4>Founder &amp; CEO<br> FINSTICK Innovations</h4>
-              <p>ex-Commercial Director of Trafficland Limited<br>ex-Managing Director of GEMPLUS-CIS<br>(now Gemalto)</p>
+              <p>ex-Commercial Director of <a class="inline-link inline-link--offering" href="http://eng.trafficland.ru/" target="_blank">Trafficland Limited</a><br>ex-Managing Director of <a class="inline-link inline-link--offering" href="www.gemplus.com" target="_blank">GEMPLUS-CIS</a><br>(now Gemalto)</p>
               <div class="our-team__links">
                 <a href="mailto:julius@finstick.net" class="our-team__link our-team__link--email"></a>
                 <a href="http://www.linkedin.com/in/Julikuznetsov" class="our-team__link our-team__link--linkedin"></a>
@@ -170,7 +178,7 @@
               <img src="images/team/marinenko.png">
               <h3>Alexander Marinenko</h3>
               <h4>Co-Founder &amp; CTO<br> FINSTICK Innovations</h4>
-              <p>Ph.D. in electronics and communication engineering<br>ex-CTO of Intistele.com<br>ex-TechLead of Trafficland Limited</p>
+              <p>Ph.D. in electronics and telecommunication engineering<br>ex-CTO of  <a class="inline-link inline-link--offering" href="https://www.intistele.com/" target="_blank">Intis Telecom</a><br>ex-TechLead of <a class="inline-link inline-link--offering" href="http://eng.trafficland.ru/" target="_blank">Trafficland Limited</a></p>
               <div class="our-team__links">
                 <a href="mailto:alex@finstick.net" class="our-team__link our-team__link--email"></a>
                 <a href="https://www.linkedin.com/in/alex-marinenko" class="our-team__link our-team__link--linkedin"></a>
@@ -180,8 +188,8 @@
             <li>
               <img src="images/team/smelova.png">
               <h3>Irina Smelova</h3>
-              <h4>CFO</h4>
-              <p>VP of finance and investment,<br> Board member at<br> Segezha Group</p>
+              <h4>CFO<br> FINSTICK Innovations</h4>
+              <p>VP of finance and investment,<br> Board member at<br> <a class="inline-link inline-link--offering" href="https://segezha-group.com/en/" target="_blank">Segezha Group</a></p>
               <!-- <div class="our-team__links">
                 <a href="#" class="our-team__link our-team__link--email"></a>
                 <a href="#" class="our-team__link our-team__link--linkedin"></a>
@@ -189,15 +197,27 @@
               </div -->
             </li>
             <li>
-              <img src="images/team/1-1.png">
-              <h3></h3>
-              <h4></h4>
-              <p>Business Relationship Director,<br> Head of Loyalty Programs &amp;<br> Partnerships development</p>
-              <!-- <div class="our-team__links">
-                <a href="#" class="our-team__link our-team__link--email"></a>
-                <a href="#" class="our-team__link our-team__link--linkedin"></a>
-                <a href="#" class="our-team__link our-team__link--facebook"></a>
-              </div -->
+              <img src="images/team/ogorodnikov.png">
+              <h3>Evgeny Ogorodnikov</h3>
+              <h4>Data Strategy Director,<br> Head of Blockchain and CRM<br> Infrastructure Department</h4>
+              <p>ex- SAP Project Manager at <a class="inline-link inline-link--offering" href="http://teamidea.ru/en/" target="_blank">TeamIdea Group</a>
+                (16 successful corporate SAP IT system integration projects for OJSC "Formula Holding",
+                <a class="inline-link inline-link--offering" href="http://euroset.com/" target="_blank">"Euroset"</a>,
+                <a class="inline-link inline-link--offering" href="http://www.mtsgsm.com/" target="_blank">MTS retail network (JSC «RTK»)</a>,
+                <a class="inline-link inline-link--offering" href="http://www.profmax.pro/" target="_blank">PROFMAX</a>,
+                <a class="inline-link inline-link--offering" href="https://ru.wikipedia.org/wiki/Enter_%D0%A1%D0%B2%D1%8F%D0%B7%D0%BD%D0%BE%D0%B9" target="_blank">Enter</a>,
+                <a class="inline-link inline-link--offering" href="http://bezant.ru/" target="_blank">"Bezant" retail</a>,
+                <a class="inline-link inline-link--offering" href="http://www.technonicol.com/" target="_blank">TechnoNICOL Corp.</a>,
+                <a class="inline-link inline-link--offering" href="https://www.exist.ru/" target="_blank">Exist</a>,
+                JV Rostelecom and Korean GS HOME SHOPPING INC <a class="inline-link inline-link--offering" href="https://bum-tv.ru/" target="_blank">«BOOM-TV»</a> and others)<br/>
+                ex- Corporate Development director, Board Member of OJSC «Formula Holding»
+                (retail, beverages distribution)
+              </p>
+              <div class="our-team__links">
+                <a href="mailto:eogorodnikov@finstick.net" class="our-team__link our-team__link--email"></a>
+                <a href="https://www.linkedin.com/in/evgeny-ogorodnikov-67b8b8a5/" class="our-team__link our-team__link--linkedin"></a>
+                <a href="skype:evgeny_o" class="our-team__link our-team__link--skype"></a>
+              </div>
             </li>
             <li>
               <img src="images/team/2-1.png">
@@ -243,10 +263,10 @@
           <h2>Advisors</h2>
           <ul>
             <li>
-              <img src="images/team/4-1.png">
+              <img src="images/team/smelov.png">
               <h3>Alexey Smelov</h3>
               <h4>Strategy,<br> Business development</h4>
-              <p>CTO at Synterra<br> ex- International Business Development Director<br> Eyeline Communications<br>
+              <p>CTO at SYNTERRA CJSC,<br/> part of MegaFon Group<br> ex- International Business Development Director<br> Eyeline Communications<br>
               ex- New Technologies and Services Director<br> Mobile TeleSystems</p>
             </li>
             <li>
@@ -329,7 +349,7 @@
           <ul>
             <li class="roadmap-item--full">
               <h3>2004</h3>
-              <p>Trafficland Limited incorporated, focusing on remote smartcard management, server VAS platforms and services for MNOs and mobile banking applications</p>
+              <p><a class="inline-link inline-link--offering" href="http://eng.trafficland.ru/" target="_blank">Trafficland Limited</a> incorporated, focusing on remote smartcard management, server VAS platforms and services for MNOs and mobile banking applications</p>
             </li>
             <li class="roadmap-item--full">
               <h3>2007</h3>
@@ -554,7 +574,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <a href="#" class="footer-content__contribute-button">Contribute</a>
+        <a href="//user.liqbo.com/" class="footer-content__contribute-button">Contribute</a>
         <div class="footer-content__courses">
           <span>Contributed so far:</span>
           <span class="footer-content__course footer-content__course--btc">120</span>
@@ -571,12 +591,12 @@
   
   <div class="social-links">
     <ul>
-      <li><a href="#" class="social-link social-link--tw">Twitter</a></li>
-      <li><a href="#" class="social-link social-link--tg">Telegram</a></li>
-      <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
-      <li><a href="#" class="social-link social-link--vk">Vkontakte</a></li>
-      <li><a href="#" class="social-link social-link--ok">Odnoklassniki</a></li>
-      <li><a href="#" class="social-link social-link--gp">Google+</a></li>
+      <li><a href="javascript:window.open('https://twitter.com/share?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--tw">Twitter</a></li>
+      <li><a href="javascript:window.open('https://t.me/share/url?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--tg">Telegram</a></li>
+      <li><a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location.href)+'&t='+encodeURIComponent(document.title),'sharer', 'toolbar=0,status=0,width=626,height=436');" class="social-link social-link--fb">Facebook</a></li>
+      <li><a href="javascript:window.open('https://vk.com/share.php?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--vk">Vkontakte</a></li>
+      <li><a href="javascript:window.open('https://connect.ok.ru/offer?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title), 'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--ok">Odnoklassniki</a></li>
+      <li><a href="javascript:window.open('https://plus.google.com/share?url=' + encodeURIComponent(window.location.href), 'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--gp">Google+</a></li>
       <!-- <li><a href="#" class="social-link social-link--ig">Instagram</a></li>
       <li><a href="#" class="social-link social-link--yt">Youtube</a></li> -->
     </ul>
@@ -691,6 +711,55 @@
 
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="scripts/js.cookie.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108262621-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108262621-1');
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter46309116 = new Ya.Metrika({
+                      id:46309116,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/46309116" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
