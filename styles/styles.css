@@ -2041,7 +2041,7 @@ label[for="agreement-form__checkbox"] {
   }
 
   .main-menu {
-    width: 110px;
+    width: 107px;
     text-align: center;
     margin: 0 auto;
     margin-top: 185px;
@@ -2051,6 +2051,10 @@ label[for="agreement-form__checkbox"] {
   .main-menu__item {
     margin-right: 0;
     margin-bottom: 2px;
+  }
+
+  .main-menu__item--qa {
+    min-width: 44px;
   }
 
   .main-menu a {
