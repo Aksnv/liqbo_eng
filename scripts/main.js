@@ -446,14 +446,22 @@ $(".header-top__stay-tuned a").click(function(e) {
   e.preventDefault();
   $(".header-top__subscribe-form").addClass("header-top__subscribe-form--visible");
   $(".header-top__stay-tuned").addClass("header-top__stay-tuned--hidden");
-  $(".header-personal").addClass("header-personal--hidden");
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-personal").addClass("header-personal--hidden");
+  }
+  
 });
 
 $(".subscribe-form__close-button").click(function(e) {
   e.preventDefault();
   $(".header-top__subscribe-form").removeClass("header-top__subscribe-form--visible");
   $(".header-top__stay-tuned").removeClass("header-top__stay-tuned--hidden");
-  $(".header-personal").removeClass("header-personal--hidden");
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-personal").removeClass("header-personal--hidden");
+  }
+  
 });
 
 
@@ -598,15 +606,25 @@ $().ready(function(){
 /* Mobile menu button */
 
 $(".header-top__menu-button").click(function() {
+  $(".header-top__wrapper").addClass("header-top__wrapper--open");
   $(".header-bottom").show();
   $(".social-links").show();
-  $(".main-content").css("paddingTop", "848px");
+
+  if ($(".container").css("width") == "768px") {
+    $(".main-content").css("paddingTop", "848px");
+  }
+  
 });
 
 $(".header-bottom__close-button").click(function() {
+  $(".header-top__wrapper").removeClass("header-top__wrapper--open");
   $(".header-bottom").hide();
   $(".social-links").hide();
-  $(".main-content").css("paddingTop", 0);
+
+  if ($(".container").css("width") == "768px") {
+    $(".main-content").css("paddingTop", 0);
+  }
+  
 });
 
 
@@ -625,5 +643,52 @@ $(document).ready(function() {
     $(".footer-content__calculator-button").text("Calculator");
   } else {
     $(".footer-content__calculator-button").text("Liqbo Calculator");
+  }
+});
+
+
+/* Mobile timer */
+
+$(".header-top__timer-button").click(function() {
+  if ($(this).hasClass("header-top__timer-button--open")) {
+    $(this).removeClass("header-top__timer-button--open");
+    $(".header-top").removeClass("header-top--open");
+    $(".header-top__timer").removeClass("header-top__timer--open");
+    $(".header-top__timer ul").hide();
+  } else {
+    $(this).addClass("header-top__timer-button--open");
+    $(".header-top").addClass("header-top--open");
+    $(".header-top__timer").addClass("header-top__timer--open");
+    $(".header-top__timer ul").show();
+  }
+});
+
+
+/* Mobile courses */
+
+$(".footer-content__courses-button").click(function() {
+  if ($(this).hasClass("footer-content__courses-button--open")) {
+    $(this).removeClass("footer-content__courses-button--open");
+    $(".footer-content").removeClass("footer-content--open");
+  } else {
+    $(this).addClass("footer-content__courses-button--open");
+    $(".footer-content").addClass("footer-content--open");
+  }
+});
+
+
+/* Resize page */
+
+$(window).resize(function() {
+  if (($(".container").css("width") == "768px") || ($(".container").css("width") == "1175px")) {
+    $(".header-top__timer ul").show();
+  } else {
+    $(".header-top__timer ul").hide();
+  }
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-bottom").show();
+  } else {
+    $(".header-bottom").hide();
   }
 });
